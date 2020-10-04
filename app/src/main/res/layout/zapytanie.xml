@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+<EditText
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:maxLength="20"
+    android:hint="Pisz.."/>
+
+    <TextView
+        android:id="@+id/warningtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="5dp"
+        android:text="Podaj tytuł"
+        android:textSize="10dp"
+        android:textColor="@color/red"/>
+
+    <EditText
+        android:id="@+id/summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="15dp"
+        android:hint="Opis.."/>
+
+  <Button
+    android:id="@+id/calendar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/summary"
+    android:layout_marginTop="10dp"
+    style="@style/Widget.AppCompat.Button.Borderless"
+    android:drawableLeft="@drawable/ic_kalendarz"
+    android:textSize="15dp"
+    android:textAllCaps="false"
+    android:gravity="left|center_vertical"/>
+
+
+
+    <Button
+        android:id="@+id/alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendar"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:drawableLeft="@drawable/ic_time"
+        android:textSize="18dp"
+        android:gravity="left|center_vertical"/>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarm"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginVertical="10dp"
+        android:text="Odrzuć"
+        android:background="@color/red" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarm"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginVertical="10dp"
+       android:layout_toRightOf="@+id/cancel"
+        android:text="Zapisz"
+        android:background="@color/green" />
+
+
+
+
+
+
+
+</RelativeLayout>
